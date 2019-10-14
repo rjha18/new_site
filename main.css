@@ -1,11 +1,10 @@
 * {
-    box-sizing: border-box
+    box-sizing: content-box
 }
 html {
     font-family: 'Futura W01', helvetica, san-serif;
     color: rgba(12, 12, 10, 0.8);
     display: block;
-    overflow: hidden;
 }
 
 body {
@@ -96,7 +95,6 @@ main .line{
 }
 
 main .other {
-    border-top: 3px solid rgba(12, 12, 10, 0.8);
     grid-row: 4 / span 2;
     grid-column: 1 / 3;
 }
