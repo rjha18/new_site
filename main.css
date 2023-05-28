@@ -50,8 +50,8 @@ h2, h3, p {
 
 main {
     transform: rotate(0deg);
-    width: 90vw;
-    height: 90vh;
+    width: 85vw;
+    height: 85vh;
     display: grid;
     align-self: center;
     /* margin: auto; */
