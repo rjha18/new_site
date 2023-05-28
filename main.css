@@ -50,8 +50,8 @@ h2, h3, p {
 
 main {
     transform: rotate(0deg);
-    width: 85vw;
-    height: 85vh;
+    width: 90dvw;
+    height: 90dvh;
     display: grid;
     align-self: center;
     /* margin: auto; */
@@ -113,8 +113,8 @@ main .other {
         height: 100%;
     }
     main {
-        width: 70vw;
-        height: 50vh;
+        width: 70dvw;
+        height: 50dvh;
         grid-template-rows: auto 1fr 1fr auto auto;
     }
     main h1:nth-child(1) {
