@@ -58,8 +58,8 @@ main {
     transform: rotate(0deg);
     width: 90vw;
     height: 90vh;
-    width: 90dvw;
-    height: 90dvh;
+    width: 90svw;
+    height: 90svh;
     display: grid;
     align-self: center;
     /* margin: auto; */
@@ -127,8 +127,8 @@ main .content p {
     main {
         width: 70vw;
         height: 85vh;
-        width: 70dvw;
-        height: 85dvh;
+        width: 70svw;
+        height: 85svh;
     }    
     main h1:nth-child(2) {
         grid-column: 5;
