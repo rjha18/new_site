@@ -1,0 +1,76 @@
+.uline {
+    text-decoration: underline;
+    color: #222222;
+    cursor: pointer;
+}
+
+main {
+    grid-template-columns: auto 1fr 1fr 1fr .25fr;
+    grid-template-rows: .1fr auto 0.1fr;
+}
+
+main h1:nth-child(1) {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    -ms-flex-item-align: end;
+    text-align: left;
+}
+
+main h1:nth-child(2) {
+    grid-row: 1 / 3;
+}
+
+main .line{
+    grid-column: 1 / 6;
+    grid-row: 3;
+    padding-top: 15px
+}
+
+main .content {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    border-bottom: none;
+}
+
+main .content p {
+    border-bottom: none;
+    text-transform: none;
+}
+
+p {
+    font-size: 4vw;
+    margin: 0;
+    border-bottom: 3px solid #222222;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 550px) {
+    main h1:nth-child(2) {
+        grid-column: 5;
+        grid-row: 1 / 3;
+    }
+    
+    main .line{
+        grid-column: 3 / 6;
+        grid-row: 3;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        max-width: 750px;
+        max-height: 525px;
+    }
+    p {
+        font-size: 16pt;
+        margin-bottom: 4px;
+    }
+}
+
