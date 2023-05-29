@@ -15,10 +15,10 @@ body {
 
 .outer {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 100%; */
 }
 
 ul {
@@ -40,7 +40,7 @@ a {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 3.5vw;
     margin: 0;
     border-bottom: 3px solid #222222;
     padding-top: 2px;
@@ -56,12 +56,13 @@ h2, h3, p {
 
 main {
     transform: rotate(0deg);
-    width: 90vw;
+    /* width: 90vw;
     height: 90vh;
     width: 90svw;
-    height: 90svh;
+    height: 90svh; */
     display: grid;
-    align-self: center;
+    margin: 25px;
+    /* align-self: center; */
     /* margin: auto; */
     /* margin-top: 15%; */
     grid-template-columns: auto 1fr 1fr 1fr .25fr;
@@ -122,13 +123,18 @@ main .content p {
 
 @media only screen and (min-width: 550px) {
     .outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
+        width: 100%;
     }
     main {
         width: 70vw;
-        height: 85vh;
+        height: 30vh;
         width: 70svw;
-        height: 85svh;
+        height: 30svh;
+        margin: 0;
     }    
     main h1:nth-child(2) {
         grid-column: 5;
@@ -145,10 +151,7 @@ main .content p {
     }
 }
 
-@media only screen and (min-width: 830px) {
-    .outer {
-        height: 90%;
-    }
+@media only screen and (min-width: 800px) {
     main {
         max-width: 750px;
         max-height: 525px;

@@ -12,13 +12,10 @@ body {
     margin: 0;
     display: flex;
 }
-
 .outer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 ul {
@@ -34,7 +31,7 @@ a {
 }
 
 p {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: 0;
     border-bottom: 3px solid #222222;
     padding-top: 2px;
@@ -50,14 +47,8 @@ h2, h3, p {
 
 main {
     transform: rotate(0deg);
-    width: 90vw;
-    height: 90vh;
-    width: 90svw;
-    height: 90svh;
     display: grid;
-    align-self: center;
-    /* margin: auto; */
-    /* margin-top: 15%; */
+    margin: 25px;
     grid-template-columns: auto 1fr 1fr .5fr .75fr;
     grid-template-rows: auto .5fr 1fr auto auto;
     grid-gap: 1rem;
@@ -74,7 +65,7 @@ main h1 {
 }
 
 main h1:nth-child(1) {
-    font-family: 'Abril Fatface', helvetica;
+    font-family: 'Abril Fatface', serif;
     font-size: 44pt;
     font-weight: 900;
     grid-column: 1 / 4;
@@ -112,7 +103,11 @@ main .other {
 
 @media only screen and (min-width: 550px) {
     .outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
+        width: 100%;
     }
     main {
         width: 70vw;
@@ -120,6 +115,7 @@ main .other {
         width: 70svw;
         height: 50svh;
         grid-template-rows: auto 1fr 1fr auto auto;
+        margin: 0;
     }
     main h1:nth-child(1) {
         grid-column: 1 / 6;
@@ -152,7 +148,7 @@ main .other {
     }
 
     p {
-        font-size: 2.5vw;
+        font-size: 2.75vw;
     }
 }
 
