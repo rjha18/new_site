@@ -8,7 +8,7 @@ main h1:nth-child(1) {
     text-align: right;
 }
 
-main h1:nth-child(2) {
+.sidebar {
     grid-row: 1 / 4;
 }
 
@@ -40,7 +40,7 @@ main .other {
         text-align: left;
     }
     
-    main h1:nth-child(2) {
+    .sidebar {
         grid-column: 3 / 4;
         grid-row: 2 / 5;
     }

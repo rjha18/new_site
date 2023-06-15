@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Rishi Jha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="content.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="index.html">Rishi D. Jha</a></h1>
+                <a class="sidebar" href="publications.html">publications</a>
+                <b class="line"></b>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <p class="ptitle">On Geodesic Distances and Contextual Embedding Compression for Text Classification</p>
+                            <p class="subtitle">TextGraphs '21 at NAACL | Undergraduate Research Project | Self-Directed | June 2021</p>
+                            <div class="links"><a class="links" href="https://arxiv.org/abs/2104.11295">[pdf]</a> <a class="links" href="https://github.com/kaimihata/geo-bert">[code]</a></div>
+                            <p class="abstract">
+                                In some memory-constrained settings like IoT devices and over-the-network data pipelines, it can be advantageous to have smaller contextual embeddings.
+                                We investigate the efficacy of projecting contextual embedding data (BERT) onto a manifold, and using nonlinear dimensionality reduction techniques to compress these embeddings.
+                                In particular, we propose a novel post-processing approach, applying a combination of Isomap and PCA.
+                                We find that the geodesic distance estimations, estimates of the shortest path on a Riemannian manifold, from Isomap's k-Nearest Neighbors graph bolstered the performance of the compressed embeddings to be comparable to the original BERT embeddings.
+                                On one dataset, we find that despite a 12-fold dimensionality reduction, the compressed embeddings performed within 0.1% of the original BERT embeddings on a downstream classification task.
+                                In addition, we find that this approach works particularly well on tasks reliant on syntactic data, when compared with linear dimensionality reduction.
+                                These results show promise for a novel geometric approach to achieve lower dimensional text embeddings from existing transformers and pave the way for data-specific and application-specific embedding compressions.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </main>        
+        </div>
+    </body>
+</html>

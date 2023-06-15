@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Rishi Jha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="content.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="index.html">Rishi D. Jha</a></h1>
+                <a class="sidebar" href="publications.html">publications</a>
+                <b class="line"></b>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <p class="ptitle">Label Poisoning is All You Need</p>
+                            <p class="subtitle">Master's Thesis Project | June 2023</p>
+                            <p class="links"><a class="links" href="rishi_jha_thesis.pdf">[thesis]</a> [arXiv] [code]</p>
+                            <p class="abstract">
+                                Due to their overparameterization, neural networks are particularly susceptible to <em>backdoor attacks</em> in which an adversary injects examples into a model's training set that correlate a feature-space 'trigger' with a pre-selected label.
+                                At evaluation, the attacker's goals are two-fold: (1) <em>to inject a backdoor</em> by inducing a target-label prediction whenever an example is armed with this 'trigger' and (2) <em>to remain undetected</em> by yielding a correct prediction whenever the example is unarmed.
+                                Traditionally, the threat model assumes attackers need access to the training set's features in order to embed this correlation into a model.
+                                However, motivated by crowd-sourced labeling and public model knowledge distillation, we challenge this assumption with our attack, FLIP, a trajectory-matching-based algorithm that corrupts (i.e., 'poisons') only the labels in a training set to create a backdoor with an arbitrary trigger.
+                                In particular, we show that with few-shot poisons (i.e., less than 1% of a dataset's training labels), FLIP can inject a backdoor with a 99.6% success rate while remaining undetected with less than a 1% degradation of clean accuracy. 
+                                We also demonstrate FLIP's surprising robustness to dataset, trigger, and architecture.
+                            </p>
+                            <br>
+                            <img src="attack.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </main>        
+        </div>
+    </body>
+</html>
