@@ -1,6 +1,5 @@
 .uline {
-    text-decoration: underline;
-    /* text-decoration: underline solid #B31B1B50; */
+    text-decoration: underline solid #B31B1B50;
     /* text-decoration-thickness: 1.5px; */
     transition: text-decoration 200ms ease, background-size 200ms;
     color: #222222;
