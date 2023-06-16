@@ -1,9 +1,17 @@
 .uline {
-    text-decoration: underline solid #B31B1B50;
-    text-decoration-thickness: 1.5px;
+    text-decoration: underline;
+    /* text-decoration: underline solid #B31B1B50; */
+    /* text-decoration-thickness: 1.5px; */
+    transition: text-decoration 200ms ease, background-size 200ms;
     color: #222222;
     cursor: pointer;
     font-weight: 400;
+    position:relative;
+    --bg-h: 20%;
+}
+
+.uline:where(:hover, :focus-visible) {
+    text-decoration: underline solid transparent;
 }
 
 main {
