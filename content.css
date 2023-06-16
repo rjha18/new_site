@@ -1,7 +1,9 @@
 .uline {
-    text-decoration: underline;
+    text-decoration: underline solid #B31B1B50;
+    text-decoration-thickness: 1.5px;
     color: #222222;
     cursor: pointer;
+    font-weight: 400;
 }
 
 main {
