@@ -85,11 +85,12 @@ main h1:nth-child(1) {
     justify-self: end;
     margin-right: -10px;
     font-size: 2em;
+    font-weight: 700;
+    color: #A2998B;
 }
 
 /* .sidebar_content {
-    font-weight: 700;
-    color: #A2998B;
+
 } */
 
 main .line{
