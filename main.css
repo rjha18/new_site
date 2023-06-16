@@ -80,8 +80,6 @@ main h1:nth-child(1) {
 
 .sidebar {
     text-transform: lowercase;
-    font-weight: 600;
-    color: #A2998B;
     writing-mode: vertical-rl;
     grid-column: 5 / 6;
     justify-self: end;
@@ -89,13 +87,10 @@ main h1:nth-child(1) {
     font-size: 2em;
 }
 
-/* .sidebar_content {
-    text-transform: lowercase;
+.sidebar_content {
     font-weight: 700;
     color: #A2998B;
-    writing-mode: vertical-rl;
-    font-size: 2em;
-} */
+}
 
 main .line{
     border-bottom: 25px solid #B31B1B;
