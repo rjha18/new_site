@@ -81,7 +81,7 @@ main h1:nth-child(1) {
 .sidebar {
     grid-column: 5 / 6;
     justify-self: end;
-    background-color: beige;
+    background-color: blueviolet;
 }
 
 .sidebar_content {
