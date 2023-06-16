@@ -1,7 +1,16 @@
 .uline {
-    text-decoration: underline;
+    text-decoration: underline solid #B31B1B50;
+    text-decoration-thickness: 1.5px;
+    transition: text-decoration 200ms ease, background-size 200ms;
     color: #222222;
     cursor: pointer;
+    font-weight: 400;
+    position:relative;
+    --bg-h: 20%;
+}
+
+.uline:where(:hover, :focus-visible) {
+    text-decoration: underline solid transparent;
 }
 
 main {
@@ -50,6 +59,7 @@ p, li {
 .ptitle {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    font-weight: 400;
 }
 
 .subtitle {
@@ -61,6 +71,7 @@ p, li {
 
 .abstract {
     font-size: 12pt;
+    margin-bottom: 0px;
 }
 
 .links {
@@ -95,7 +106,6 @@ img {
 @media only screen and (min-width: 800px) {
     main {
         max-width: 750px;
-        max-height: 525px;
     }
     p, li  {
         font-size: 16pt;
