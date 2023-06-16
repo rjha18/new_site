@@ -75,6 +75,7 @@ main .other {
     }
     main {
         max-width: 750px;
+        max-height: 525px;
     }
     p {
         font-size: 13pt;
