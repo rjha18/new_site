@@ -1,11 +1,11 @@
 .uline {
     text-decoration: underline;
-    text-decoration-color: #B31B1B50;
+    text-decoration-color: var(--ptext_light);
     text-decoration-thickness: 1.5px;
     transition: text-decoration 200ms ease, background-size 200ms;
-    color: #222222;
+    color: var(--ptext);
     cursor: pointer;
-    font-weight: 400;
+    font-weight: var(--base);
     position:relative;
     --bg-h: 20%;
 }
@@ -50,21 +50,21 @@ main .content p, main .content li {
 p, li {
     font-size: 4vw;
     margin: 0;
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid var(--ptext);
     padding-top: 4px;
     padding-bottom: 4px;
     line-height: 1;
-    font-weight: 300;
+    font-weight: var(--light);
 }
 
 .ptitle {
     margin-bottom: 0px;
     padding-bottom: 0px;
-    font-weight: 400;
+    font-weight: var(--base);
 }
 
 .subtitle {
-    color: #B31B1B;
+    color: var(--stext);
     font-size: 10pt;
     margin-bottom: 0px;
 }
@@ -80,7 +80,7 @@ p, li {
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: #A2998B;
+    color: var(--htext);
 }
 
 img {

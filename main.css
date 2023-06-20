@@ -1,17 +1,33 @@
+:root {
+    --ptext: #222222;
+    --ptext_light: #22222250;
+    --bground: #fffff8;
+    --hover: #B31B1B50;
+    --stext: #B31B1B;
+    --htext: #A2998B;
+    --light: 300;
+    --base: 400;
+    --heavy: 700;
+}
+
 * {
     box-sizing: content-box
 }
 
 html {
     font-family: 'Lato', helvetica, sans-serif;
-    color: #222222;
+    color: var(--ptext);
     display: block;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    background-color: #fffff8;
+    background-color: var(--bground);
     margin: 0;
     display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .outer {
@@ -26,12 +42,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: #222222;
+    color: var(--ptext);
     cursor: pointer;
 }
 
 a {
-    background: linear-gradient(0deg, #B31B1B50, #B31B1B50) no-repeat right bottom / 0 var(--bg-h);
+    background: linear-gradient(0deg, var(--hover), var(--hover)) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 200ms;
     --bg-h: 100%;
 }
@@ -44,11 +60,11 @@ a:where(:hover, :focus-visible) {
 p {
     font-size: 3.5vw;
     margin: 0;
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid var(--ptext);
     padding-top: 2px;
     padding-bottom: 2px;
     line-height: 1;
-    font-weight: 300;
+    font-weight: var(--light);
 }
 
 h2, h3, p {
@@ -66,7 +82,7 @@ main {
 .caps {
     font-size: 14pt;
     text-transform: uppercase;
-    font-weight: 700
+    font-weight: var(--heavy)
 }
 
 main h1 {
@@ -88,12 +104,12 @@ main h1:nth-child(1) {
 }
 
 .sidebar_content {
-    font-weight: 700;
-    color: #A2998B;
+    font-weight: var(--heavy);
+    color: var(--htext);
 }
 
 main .line{
-    border-bottom: 25px solid #B31B1B;
+    border-bottom: 25px solid var(--stext);
     align-self: start;
     justify-content: end;
 }
@@ -111,3 +127,4 @@ main .line{
         width: 70svw;
         margin: 0;
     }
+}
