@@ -75,20 +75,18 @@ main .other {
     }
     main {
         max-height: 500px;
-        max-width: 750px;
+        max-width: 600px;
     }
     p {
-        font-size: 13pt;
+        font-size: 14.5pt;
     }
-}
-
-@media only screen and (min-width: 940px) {
     main h1:nth-child(1) {
         grid-column: 1 / 4;
         -ms-flex-item-align: start;
         text-align: right;
     }
 }
+
 
 @media only screen and (min-height: 600px) and (min-width: 760px) {
     main {
