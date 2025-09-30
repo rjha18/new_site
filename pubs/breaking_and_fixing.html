@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../content.css">
+        <link rel="shortcut icon" type="image/png" href="../im/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Rishi Jha</title>
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="../index.html">Rishi D. Jha</a></h1>
+                <div class="sidebar">
+                    <a class="sidebar_content" href="../publications.html">publications</a>
+                </div>
+                <b class="line"></b>
+                <div class="content">
+                    <p class="ptitle">Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems</p>
+                    <p class="subtitle"> <b>Preprint</b> | Rishi Jha, Harold Triedman, Justin Wagle, Vitaly Shmatikov</p>
+                    <p class="links"><a class="links" href="">[conference]</a> <a class="links" href="">[code]</a></p>
+                    <p class="abstract">
+                        Control-flow hijacking attacks manipulate orchestration mechanisms in multi-agent systems into performing unsafe actions that compromise the system and exfiltrate sensitive information.  Recently proposed defenses, such as LlamaFirewall, rely on alignment checks of inter-agent communications to ensure that all agent invocations are "related to" and "likely to further" the original objective. 
+                    </p>
+                    <p class="abstract">
+                        We start by demonstrating control-flow hijacking attacks that evade these defenses even if alignment checks are performed by advanced LLMs.  We argue that the safety and functionality objectives of multi-agent systems fundamentally conflict with each other.  This conflict is exacerbated by the brittle definitions of "alignment" and the checkers' incomplete visibility into the execution context.
+                    </p>
+                    <p class="abstract">
+                        We then propose, implement, and evaluate ControlValve, a new defense based on the principles of control-flow integrity and least privilege.  ControlValve (1) generates permitted control-flow graphs for multi-agent systems, and (2) enforces that all executions comply with these graphs, along with contextual rules (generated in a zero-shot manner) for each agent invocation.
+                    </p>
+                    <br>
+                    <img src="../im/cfh_def.png" alt="Control-Flow Hijacking Diagram">
+                </div>
+            </main>        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../content.css">
+        <link rel="shortcut icon" type="image/png" href="../im/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Rishi Jha</title>
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="../index.html">Rishi D. Jha</a></h1>
+                <div class="sidebar">
+                    <a class="sidebar_content" href="../publications.html">publications</a>
+                </div>
+                <b class="line"></b>
+                <div class="content">
+                    <p class="ptitle">Multi-Agent Systems Execute Arbitrary Malicious Code</p>
+                    <p class="subtitle"> <b>COLM '25</b> | Harold Triedman, Rishi Jha, Vitaly Shmatikov</p>
+                    <p class="links"><a class="links" href="">[conference]</a> <a class="links" href="">[code]</a></p>
+                    <p class="abstract">
+                        Multi-agent systems coordinate LLM-based agents to perform tasks on users' behalf. In real-world applications, multi-agent systems will inevitably interact with untrusted inputs, such as malicious Web content, files, email attachments, and more.
+                    </p>
+                    <p class="abstract">
+                        Using several recently proposed multi-agent frameworks as concrete examples, we demonstrate that adversarial content can hijack control and communication within the system to invoke unsafe agents and functionalities.  This results in a complete security breach, up to execution of arbitrary malicious code on the user's device or exfiltration of sensitive data from the user's containerized environment.  For example, when agents are instantiated with GPT-4o, Web-based attacks successfully cause the multi-agent system execute arbitrary malicious code in 58-90% of trials (depending on the orchestrator).  In some model-orchestrator configurations, the attack success rate is 100%.  We also demonstrate that these attacks succeed even if individual agents are not susceptible to direct or indirect prompt injection, and even if they refuse to perform harmful actions.  We hope that these results will motivate development of trust and security models for multi-agent systems before they are widely deployed.
+                    </p>
+                    <br>
+                    <img src="../im/cfh.png" alt="Control-Flow Hijacking Diagram">
+                </div>
+            </main>        
+        </div>
+    </body>
+</html>
