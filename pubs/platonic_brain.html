@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../content.css">
+        <link rel="shortcut icon" type="image/png" href="../im/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Rishi Jha</title>
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="../index.html">Rishi D. Jha</a></h1>
+                <div class="sidebar">
+                    <a class="sidebar_content" href="../publications.html">publications</a>
+                </div>
+                <b class="line"></b>
+                <div class="content">
+                    <p class="ptitle">Platonic Representations in the Human Brain: Unsupervised Recovery of Universal Geometry</p>
+                    <p class="subtitle"><b>Preprint</b> | Pablo Marcos-Manchón, Rishi Jha, Lluís Fuentemilla</p>
+                    <p class="links"><a class="links" href="https://arxiv.org/abs/2605.20496">[preprint]</a> <a class="links" href="https://github.com/memory-formation/platonic-representations-fmri">[code]</a></p>
+                    <p class="abstract">
+                        The Strong Platonic Representation Hypothesis suggests that representational convergence in artificial neural networks can be harnessed constructively: embeddings can be translated across models through a universal latent space without paired data. We ask whether an analogous geometry can be recovered across human brains. Using fMRI data from the Natural Scenes Dataset, we propose a self-supervised encoder that learns subject-specific embeddings from brain data alone by exploiting repeated stimulus presentations. We show that these independently learned spaces can be translated across subjects using unsupervised orthogonal rotations, without paired cross-subject samples or intermediate model representations. Synchronizing pairwise rotations into a single shared latent space further improves cross-subject retrieval, indicating that subject-specific spaces are mutually compatible with a common coordinate system. These results provide evidence for a shared neural geometry in the human visual cortex: subject-specific fMRI representations are approximately isometric across individuals and can be translated through purely geometric transformations.
+                    </p>
+                    <br>
+                    <img src="../im/platonic_brain.png" alt="Subject-specific brain encoders and cross-subject shared representation alignment">
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

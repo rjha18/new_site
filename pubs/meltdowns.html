@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../content.css">
+        <link rel="shortcut icon" type="image/png" href="../im/favicon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Rishi Jha</title>
+    </head>
+    <body>
+        <div class="outer">
+            <main>
+                <h1><a href="../index.html">Rishi D. Jha</a></h1>
+                <div class="sidebar">
+                    <a class="sidebar_content" href="../publications.html">publications</a>
+                </div>
+                <b class="line"></b>
+                <div class="content">
+                    <p class="ptitle">Agent Meltdowns: The Road to Hell Is Paved with Helpful Agents</p>
+                    <p class="subtitle"><b>Preprint</b> | Rishi Jha*, Harold Triedman*, Arkaprabha Bhattacharya, Vitaly Shmatikov</p>
+                    <p class="links"><a class="links" href="https://arxiv.org/abs/2605.19149">[preprint]</a></p>
+                    <p class="abstract">
+                        Agents operating with computer and Web use inevitably encounter errors: inaccessible webpages, missing files, local and remote misconfigurations, etc. These errors do not thwart agents based on state-of-the-art models. They helpfully continue to look for ways to complete their tasks.
+                    </p>
+                    <p class="abstract">
+                        We introduce, characterize, and measure a new type of agent failure we call <i>accidental meltdown</i>: unsafe or harmful behavior in response to a benign environmental error, in the absence of any adversarial inputs. Because meltdowns are not captured by the existing reliability or safety benchmarks, we develop a taxonomy of meltdown behaviors. We then implement an agent-agnostic infrastructure for injecting simulated local and remote errors into the rollout environment and use it to systematically evaluate agent systems powered by GPT, Grok, and Gemini.
+                    </p>
+                    <p class="abstract">
+                        Our evaluation demonstrates that meltdowns (e.g., conducting unauthorized reconnaissance or subverting access control) of varying severity and success occur in 64.7% of agent rollouts that encounter simulated errors, spanning all combinations of agent system, backing model, and error type. In over half of these meltdowns, unsafe behaviors are not reported to the user. Comparing behaviors of the same agents with and without errors, we find that exploration in response to errors is correlated with unsafe and harmful behavior.
+                    </p>
+                    <br>
+                    <img src="../im/meltdowns.png" alt="Agent meltdown behaviors across evaluated models and agent systems">
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
